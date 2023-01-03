@@ -27,6 +27,8 @@ class Colorbar:
     lines: list[LineCollection]
     dividers: LineCollection
     n_rasterize: int = ...
+    extend: Literal["neither", "both", "min", "max"] | None
+    mappable: ScalarMappable
 
     def __init__(
         self,
